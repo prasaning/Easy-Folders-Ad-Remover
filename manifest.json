@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Easy Folder Cleaner",
+  "version": "1.0",
+  "description": "Made by prasan",
+  "permissions": ["activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches":["https://chat.openai.com/*","https://chatgpt.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
